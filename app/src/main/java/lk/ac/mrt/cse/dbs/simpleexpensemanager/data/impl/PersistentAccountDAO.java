@@ -1,3 +1,4 @@
+
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.impl;
 
 import android.database.Cursor;

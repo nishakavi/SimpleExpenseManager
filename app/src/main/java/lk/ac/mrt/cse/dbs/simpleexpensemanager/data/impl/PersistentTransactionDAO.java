@@ -71,7 +71,7 @@ public class PersistentTransactionDAO implements TransactionDAO {
             Transaction transaction = new Transaction(new Date(selectData.getLong(selectData.getColumnIndex("LogDate"))),
                                                       selectData.getString(selectData.getColumnIndex("AccountNum")),
                                                       (selectData.getInt(selectData.getColumnIndex("Type")) == 0) ? ExpenseType.EXPENSE : ExpenseType.INCOME,
-                                                      selectData.getDouble(selectData.getColumnIndex("Amt")));
+                                                      selectData.getDouble(selectData.getColumnIndex("Amount")));
             transactionList.add(transaction);
         }
         return transactionList;
